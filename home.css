@@ -1,0 +1,57 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: black;
+    font-size:4rem;
+    padding:20px;
+  }
+  
+  
+  
+   .overlay { 
+              height: 0%; 
+              width: 100%; 
+              position: fixed; 
+              top: 0; 
+              left: 0; 
+              background-image: url("https://cdn.glitch.com/ed89c250-dec2-45db-947b-a1a776b11098%2Fe9de360e-334c-4bbf-8608-3ec8abaa6955.image.png?v=1600840553191"); 
+              overflow-y: hidden; 
+              transition: 1.0s; 
+          } 
+    
+          .overlay-content { 
+              position: relative; 
+              top: 25%; 
+              width: 100%; 
+              text-align: center; 
+          } 
+    
+          .overlay a { 
+              padding: 10px; 
+              text-decoration: none; 
+              font-size: 40px; 
+              color: white;
+              display: block; 
+              transition: 0.3s; 
+          } 
+    
+          .overlay a:hover, 
+          .overlay a:focus { 
+            color: black; 
+            background-color: hsla(40, 100%, 50%, .3);
+            overflow: hidden;
+  
+          } 
+    
+          .overlay .closebtn { 
+              position: absolute; 
+              top: 10px; 
+              right: 35px; 
+              font-size: 70px; 
+          } 
+  
+  
