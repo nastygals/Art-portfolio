@@ -1,0 +1,58 @@
+body{
+    margin:10px;
+    text-decoration:none;
+    color:white;
+}
+
+.grid_container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(5,1fr);
+    grid-gap:5px;
+    grid-auto-rows:minmax(100px,auto);
+    grid-template-areas:
+    "heading heading heading"
+    "first second third"
+    "first second third "
+    "first fourth fifth"
+    "sixth sixth ending";
+
+}
+.grid_container > div:nth-child(even){
+    color:indianred;
+}
+.grid_container > div:nth-child(odd){
+    background-color:indianred;
+}
+
+.grid_heading{
+    grid-area: heading;
+}
+
+.grid_first{
+    grid-area: first;
+}
+
+.grid_second{
+    grid-area:second;
+}
+
+.grid_third{
+    grid-area:third;
+}
+
+.grid_fourth{
+    grid-area:fourth;
+}
+
+.grid_fifth{
+    grid-area:fifth;
+}
+
+.grid_sixth{
+    grid-area:sixth;
+}
+
+.grid_ending{
+    grid-area:ending;
+}
